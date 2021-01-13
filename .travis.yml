@@ -8,4 +8,5 @@ addons:
     packages:
       - maven
 script:
-  - mvn clean:clean install
+  - mvn clean:clean 
+  - mvn install -Dmaven.javadoc.skip=true -B -V 
